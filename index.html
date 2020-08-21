@@ -4,18 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <style>
-      body {
-        background: rgb(43, 43, 43);
-      }
-    </style>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <main class="main">
       <h1 class="main__heading">Caesar Cipher</h1>
-      <input class="main__input" type="text" />
-      <button class="main__button">Generate!</button>
+      <div class="main__input-wrapper">
+        <p class="main__paragraph">Type the word to encrypt:</p>
+        <input class="main__input" placeholder="type here" type="text" />
+      </div>
       <div class="main__result"></div>
+      <button class="main__button">Generate!</button>
     </main>
     <script src="main.js"></script>
   </body>

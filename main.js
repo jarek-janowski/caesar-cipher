@@ -11,7 +11,7 @@ function caesar13(toEncrypt) {
     alert("Type the word to encrypt.");
     throw new Error("Input is empty!");
   } else if (typeof toEncrypt !== "string") {
-    alert("type a word that is a string.");
+    alert("Type the word that is a string.");
     throw new Error("Input is not a string!");
   }
   const encrypt = [...toEncrypt].map((char) => {
@@ -27,5 +27,7 @@ function caesar13(toEncrypt) {
 }
 
 generateButton.addEventListener("click", () => {
-  result.innerHTML = caesar13(entryInput.value);
+  result.innerHTML = `Your encrypted word is 🗝: </br>'${caesar13(
+    entryInput.value
+  )}'`;
 });
