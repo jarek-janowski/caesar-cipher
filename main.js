@@ -27,7 +27,9 @@ function caesar13(toEncrypt) {
 }
 
 generateButton.addEventListener("click", () => {
-  result.innerHTML = `Your encrypted word is 🗝: </br>'${caesar13(
+  result.innerHTML = `Your encrypted word is: </br>'${caesar13(
     entryInput.value
   )}'`;
+  result.style.border = "3px solid white";
+  result.style.backgroundColor = "rgba(55, 55, 55, 0.7)";
 });
